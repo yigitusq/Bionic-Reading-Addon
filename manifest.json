@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Bionic Reader",
+  "version": "2.0",
+  "description": "A Chrome extension that applies the Bionic Reading method to any webpage for faster reading and better focus.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
